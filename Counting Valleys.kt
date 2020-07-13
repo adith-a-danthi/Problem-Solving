@@ -26,12 +26,13 @@ He enters and leaves one valley.
  */
 
 fun main() {
-    val scan = Scanner(System.`in`)
 
-    val n = scan.nextLine().trim().toInt()
-    val str = scan.nextLine().trim()
-    var level: Int = 0
-    var valleys: Int = 0
+    val n = readLine()!!.trim().toInt()
+    val str = readLine!!.trim()
+
+    var level = 0
+    var valleys = 0
+    
     for (i in 0 until n) {
         if (str[i] == 'U') {
             level += 1
@@ -43,5 +44,5 @@ fun main() {
     }
 
     println("Number of valleys: $valleys")
-    
+
 }
